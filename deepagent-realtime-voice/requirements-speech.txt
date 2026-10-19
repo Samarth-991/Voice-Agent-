@@ -1,0 +1,10 @@
+# Local speech engines (T4 GPU, driver CUDA 12.2 -> cu121 torch build).
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+silero-vad>=6.2
+faster-whisper>=1.2
+scipy>=1.13
+# Kokoro-82M TTS (misaki[en] G2P bundles espeak-ng via espeakng-loader; no apt needed)
+kokoro>=0.9.4
+# transformers 5.x needs torch>=2.6, and cu121 builds stop at 2.5.1.
+transformers>=4.45,<5

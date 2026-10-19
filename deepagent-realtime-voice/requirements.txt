@@ -1,0 +1,11 @@
+# Server
+fastapi>=0.115
+uvicorn[standard]>=0.34
+numpy>=1.26
+
+# Agent harness (Azure OpenAI via LangChain + Deep Agents)
+deepagents>=0.7.28
+langchain-openai>=1.0
+azure-identity>=1.19
+ddgs>=9
+trafilatura>=2
